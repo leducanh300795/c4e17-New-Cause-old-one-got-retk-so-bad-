@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Mùa đông không lạnh </title>
+  </head>
+  <body>
+    <h1> Search page </h1>
+      {% for service in all_service%}
+        <div>
+          {% if service.gender == 1%}
+          <img src="../static/image/tokuda.jpg" alt="">
+          {% else %}
+          <img src="../static/image/rina.jpg" alt="">
+          {% endif %}
+          <p>Name: {{service.name}}</p>
+          <p>Yob: {{service.yob}}</p>
+          <p>Gender: {{service.gender}}</p>
+          <p>Phone number: {{service.phone}}</p>
+          <p>Address: {{service.address}}</p>
+          <p>Height: {{service.height}}</p>
+          <p>Status: {{service.status}}</p>
+
+        </div>
+        <hr>
+        {% endfor %}
+
+  </body>
+</html>
