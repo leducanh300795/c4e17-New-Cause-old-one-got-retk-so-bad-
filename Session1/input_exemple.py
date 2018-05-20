@@ -1,0 +1,7 @@
+print("Hello my friend")
+n =input("What's your name, please write it and press enter ")
+print("Hi",n)
+i = input("Now, can i ask: Your year of birth ?, please write it and press enter ")
+print("Wow, okie, now i guess your age is")
+m= 2018-int(i)
+print(m)

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h3>Introduce Myseft<h3>
+
+      {% for post in posts %}
+      <h5> Name: {{ post.name }} </h5>
+      <ul>
+        <li> Work: {{ post.work }}</li>
+        <li> School: {{ post.school }}</li>
+        <li> Hobbies: {{ post.hobbies }}</li>
+        <li> Dog: {{ post.dog }}</li>
+      </ul>
+      {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if result < 16 %}
+    <h1>Severy underweight<h1>
+    {% elif result >= 16 and result < 18.5 %}
+    <h1> Underweight <h1>
+    {% elif result >= 18.5 and result < 25 %}
+    <h1> Normal <h1>
+    {% elif result >= 25 and result < 30 %}
+    <h1> Over Weight <h1>
+    {% else %}
+    <h1> Obese <h1>
+    {% endif %}
+  </body>
+</html>

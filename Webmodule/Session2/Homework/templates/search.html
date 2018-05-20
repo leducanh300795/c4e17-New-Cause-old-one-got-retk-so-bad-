@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mùa Đông Không Lạnh</title>
+  </head>
+  <body>
+    <h1> Main Page </h1>
+    <a href="{{ url_for ('search_customer')}}" > Bạn là Nữ, muốn tìm 10 chàng trai đầu tiên  ? </a>
+    {% for customer in all_customer %}
+    <div>
+      {% if customer.gender == 1 %}
+      <img src="../static/image/male.jpg" alt="">
+
+      {% else %}
+      <img src="../static/image/female.jpg" alt="">
+      {% endif %}
+      <p>Name: {{customer.name}} </p>
+      {% if customer.gender == 1 %}
+      <p>Gender: Male </p>
+
+      {% else %}
+      <p>Gender: Female </p>
+      {% endif %}
+      <p>Email: {{customer.email}} </p>
+      <p>Phone: {{customer.phone_number}} </p>
+      <p>Job: {{customer.job}} </p>
+      <p>Company: {{customer.company}} </p>
+      <p>contacted: {{customer.contacted}} </p>
+    </div>
+      <p>***************************************************************</p>
+    {% endfor %}
+
+  </body>
+</html>

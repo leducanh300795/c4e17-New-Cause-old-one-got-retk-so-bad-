@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mùa Đồng Không Lạnh</title>
+  </head>
+   <h1>Administrator</h1>
+   <table border="1px">
+     <thead>
+       <tr>
+         <th>STT</th>
+         <th>NAME</th>
+         <th>YOB</th>
+         <th>GENDER</th>
+         <th>HEIGHT</th>
+         <th>PHONE</th>
+         <th>ADDRESS</th>
+         <th>STATUS</th>
+       </tr>
+     </thead>
+     <tbody>
+       {% for service in all_service %}
+       <tr>
+         <td>{{loop.index}}</td>
+         <td>{{ service.name }}</td>
+         <td>{{ service.yob }}</td>
+         <td>{{ "Nam" if service.gender == 1 else "Nữ" }}</td>
+         <!-- <td>{% if service.gender == 1 %}
+         Male
+         {% else %}
+         Female
+         {% endif %}
+         </td> -->
+         <td>{{ service.height }} </td>
+         <td>{{service.phone}}</td>
+         <td>{{service.address}}</td>
+         <td>{{ "Rảnh" if service.status else "Bận" }}</td>
+         <td>
+           <a href="/#"> Sửa </a>
+           <br>
+           <a href="{{ url_for('delete', service_id = service.id)}}"> Xóa </a>
+         </td>
+       </tr>
+       {% endfor %}
+     </tbody>
+   </table>
+  <body>
+
+  </body>
+</html>

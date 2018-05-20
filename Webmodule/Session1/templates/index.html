@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h3>C4E Blog<h3>
+    <!--jinja2 -->
+    {% for post in posts %}
+      <h5> {{ post.title }} </h5>
+      <p>
+        {{ post.content }}
+      </p>
+      <i>
+        {% if post.gender == 1 %}
+         Mr.
+      {% else %}
+         Ms.
+      {% endif %}
+    {{ post.author }}
+    </i>
+
+    {% endfor %}
+  </body>
+</html>
