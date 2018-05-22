@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Detail</title>
+  </head>
+  <body>
+    <h2>Services detail</h2>
+
+      <div>
+        <img src="{{ service.image }}" alt="">
+        <h3>
+          <p>{{ service.name }}</p>
+        </h3>
+        <p>YOB: {{ service.yob }}</p>
+        <p>Gender: {{ service.gender }}</p>
+        <p>Height: {{ service.height }} cm </p>
+        <p>Phone: {{ service.phone }}</p>
+        <p>Address: {{ service.address }}</p>
+        <p>Description: {{ service.description }}</p>
+        <p>Measurements: {{service.measurements[0]}}-{{service.measurements[1]}}-{{service.measurements[2]}} </p>
+        {% if service.status == true %}
+        <p>Status: Bận</p>
+        {% elif service.status == false %}
+        <p>Status: Rảnh</p>
+        {% endif %}
+
+      </div>
+  </body>
+</html>
