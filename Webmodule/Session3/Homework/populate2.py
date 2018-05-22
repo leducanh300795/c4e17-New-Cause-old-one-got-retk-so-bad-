@@ -11,13 +11,13 @@ for i in range(50):
     print('Saving', i+1, '....')
     g=randint(0,1)
     if g==0:
-        n=female_name()
+        # n=female_name()
         i = female_image()
     elif g==1:
-        n=male_name()
+        # n=male_name()
         i= male_image()
     service = Service(image=i,
-                 name=n,
+                 name=fake.name(),
                  yob=randint(1990,2001),
                  gender=g,
                  email= fake.ascii_email(),
@@ -26,7 +26,7 @@ for i in range(50):
                  phone=sdt(),
                  description = description(),
                  address=tp(),
-                 job=job(),
-                 company=cty(),
+                 job=fake.job(),
+                 company=fake.company(),
                  status= choice([True,False]))
     service.save()

@@ -64,6 +64,11 @@ def admin():
     all_service = Service.objects()
     return render_template('admin.html',all_service = all_service )
 
+@app.route('/detail/<service_id>')
+def detail_id(service_id):
+    service = Service.objects.with_id(service_id)
+    return render_template('detail.html', service = service )
+
 @app.route('/delete/<service_id>')
 def delete(service_id):
     service_to_delete = Service.objects.with_id(service_id)
@@ -93,10 +98,7 @@ def service():
     return render_template('service.html', all_services=all_services)
 
 
-@app.route('/detail/<service_id>')
-def detail_id(service_id):
-    service = Service.objects.with_id(service_id)
-    return render_template('detail.html', service = service )
+
 
 if __name__ == '__main__':
   app.run( debug=True)
