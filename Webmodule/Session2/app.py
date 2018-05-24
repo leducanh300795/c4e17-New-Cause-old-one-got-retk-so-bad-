@@ -57,5 +57,11 @@ def search(g):
 #     id_to_find = Service.objects.get(id=id)
 #     return id_to_find
 
+@app.route('/deleteall')
+def delete_all():
+    Service.objects().delete()
+    return "Service have been deleted"
+
+
 if __name__ == '__main__':
   app.run( debug=True)

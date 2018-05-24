@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Đăng Nhập</h1>
+    <form method="post">
+      <label> Username</label>
+      <input type="text" name="Username" value="">
+
+      <br>
+
+      <label> Password</label>
+      <input type="text" name="Password" value="">
+      <br>
+      <input type="submit" name="" value="submit">
+
+    </form>
+    <br>
+    <a href="{{ url_for('signin')}}">Đăng Kí Tài Khoản</a>
+  </body>
+</html>
