@@ -1,0 +1,154 @@
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container{
+    width: 10%;
+}
+.mg-30-20px{
+    margin: 30px 20px;
+}
+
+.mg-top-20px{
+    margin-top: 20px;
+}
+
+.w-150px{
+    width: 150px;
+}
+
+.left-top{
+    height: 150px;
+    background-color: darkorange;
+}
+
+.left-middle{
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mg-top-10px{
+    margin-top: 10px;
+}
+
+.left-middle-item{
+    height: 50px;
+    width: 100%;
+    background-color: darkcyan;
+}
+
+.left-bottom{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.left-bottom-item{
+    height: 45%;
+    width: 100%;
+    background-color:  grey;
+}
+
+.right-container{
+    width: 85%;
+}
+
+.right-container-top-1{
+    display: flex;
+    height: 500px;
+    background-color: lightgreen;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right-container-top-1-floatbox{
+    margin-top: 200px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.right-container-top-1-white{
+    height: 30px;
+    background-color: white;
+    width: 250px;
+}
+
+.right-container-top-1-black{
+    height: 30px;
+    background-color: black;
+    width: 400px;
+}
+
+.right-container-top-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-container-top-2-item{
+    background-color: darkgreen;
+    width:25%;
+    height: 80px;
+}
+
+.border-white{
+    border-right: 1px solid;
+    border-right-color: white;
+}
+
+.right-container-middle{
+    display: flex;
+}
+
+.right-container-middle-blue{
+    background-color: lightblue;
+    height: 50px;
+    width: 60%;
+}
+
+.right-container-middle-red{
+    background-color: lightcoral;
+    height: 50px;
+    width: 40%;
+}
+
+.margin-30px{
+    margin: 30px 0px;
+}
+
+.right-container-bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.right-container-bottom-item{
+    height: 350px;
+    width: 24%;
+    /* background-color: aquamarine; */
+}
+
+.right-container-bottom-item-top{
+    height: 30%;
+    width: 100%;
+    background-color: orangered;
+}
+
+.right-container-bottom-item-bottom{
+    height: 70%;
+    width: 100%;
+    background-color: yellow;
+}
+
+.footer{
+    background-color:  lightgrey;
+    width: 97%;
+    height: 50px;
+}
