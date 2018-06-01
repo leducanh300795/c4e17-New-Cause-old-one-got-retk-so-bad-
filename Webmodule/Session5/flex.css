@@ -1,0 +1,22 @@
+#flex-box{
+  background-color: #ccc;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+}
+
+.w-100px{
+  width: 100px;
+}
+
+.h-100px{
+  height: 100px;
+}
+
+.bg-lightgreen{
+  background-color: lightgreen;
+}
+
+.m-10px{
+   margin: 10px;
+}
