@@ -134,11 +134,9 @@
 .right-container-top-1{
     display: flex;
     height: 445px;
-    background-color: lightgreen;
     justify-content: flex-start;
-    /* flex-direction: column; */
     align-items: center;
-    background-image: url(/static/images/bai3/header.jpg)
+    background-image: url(../image/header.jpg);
 }
 
 .right-container-top-1-floatbox{
@@ -207,13 +205,13 @@
 }
 
 .right-container-middle-blue{
-    background-color: lightblue;
+    /* background-color: lightblue; */
     height: 50px;
     width: 60%;
 }
 
 .right-container-middle-red{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     height: 50px;
     width: 40%;
 }
@@ -231,23 +229,47 @@
 .right-container-bottom-item{
     height: 350px;
     width: 24%;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
     /* background-color: aquamarine; */
 }
 
 .right-container-bottom-item-top{
     height: 30%;
     width: 100%;
-    background-color: orangered;
+    background-size:contain ;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+    border-style: dotted;
+    border-width: thin;
+
+}
+
+.bg-1{
+  background-image: url(../image/cookbooks-blog.jpg);
+}
+
+.bg-2{
+  background-image: url(../image/potato.jpg);
+}
+
+.bg-3{
+  background-image: url(../image/pinterest.jpg);
+}
+
+.bg-4{
+  background-image: url(../image/dinner-blog.jpg);
 }
 
 .right-container-bottom-item-bottom{
     height: 70%;
     width: 100%;
-    background-color: yellow;
 }
 
 .footer{
-    background-color:  lightgrey;
+    /* background-color:  lightgrey; */
     width: 97%;
     height: 50px;
 }
